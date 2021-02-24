@@ -159,7 +159,7 @@ export default new Vuex.Store({
             state.warehouse[index] = payload
         }
       })
-      console.log(state.warehouse)
+     // console.log(state.warehouse)
     }
   },
   actions: {

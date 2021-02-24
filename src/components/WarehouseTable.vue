@@ -6,7 +6,7 @@
       <v-text-field
         v-model="search"
         append-icon="mdi-magnify"
-        label="Search"
+        label="Search Warehouse "
         single-line
         hide-details
       ></v-text-field>
@@ -18,8 +18,13 @@
       @click:row="handleClick"
     >
       <template v-slot:item.is_live="{ item }">
-        <v-chip :color="item.is_live !== true ? 'red' : 'green'" dark>{{
+        <v-chip small :color="item.is_live !== true ? 'red' : 'green'" dark>{{
           item.is_live === true ? "Available" : "Not available"
+        }}</v-chip>
+      </template>
+      <template v-slot:item.is_registered="{ item }">
+        <v-chip small :color="item.is_registered !== true ? 'red' : 'green'" dark>{{
+          item.is_registered === true ? "Yes" : "No"
         }}</v-chip>
       </template>
       <template v-slot:body.append>
@@ -134,7 +139,7 @@ export default {
   },
   created() {
     this.filterUnique();
-    console.log(this.loadedWarehouse);
+    // console.log(this.loadedWarehouse);
   },
 };
 </script>

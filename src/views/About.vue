@@ -9,8 +9,8 @@
 export default {
   name: 'About',
   props:['data'],
-  created(){
-    console.log(this.data);
-  }
+  // created(){
+  //   console.log(this.data);
+  // }
 }
 </script>

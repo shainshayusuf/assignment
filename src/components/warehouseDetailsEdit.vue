@@ -61,14 +61,14 @@
         <v-flex xs12>
         <v-layout row wrap>
         <v-spacer></v-spacer>
-        <v-flex xs6>
+        <v-flex xs4>
           <v-switch
       v-model="data.is_registered"
       :label="`Registered: ${data.is_registered.toString() === 'true'?'Yes':'No'}`"
     ></v-switch>
         </v-flex>
         <v-spacer></v-spacer>
-        <v-flex xs6>
+        <v-flex xs4>
           <v-switch
       v-model="data.is_live"
       :label="`Status: ${data.is_live.toString() === 'true'?'Available':'Not available'}`"
@@ -82,7 +82,7 @@
           <v-btn
             color="red darken-1"
             text
-            
+            @click="back()"
           >
             Back
           </v-btn>
@@ -110,10 +110,14 @@ export default {
     ]),
     submit(){
      this.update(this.data);
+     this.back();
+    },
+    back(){
+      window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
     }
   },
-  created() {
-    console.log(this.data);
-  },
+  // created() {
+  //   console.log(this.data);
+  // },
 };
 </script>
