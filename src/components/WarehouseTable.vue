@@ -23,9 +23,12 @@
         }}</v-chip>
       </template>
       <template v-slot:item.is_registered="{ item }">
-        <v-chip small :color="item.is_registered !== true ? 'red' : 'green'" dark>{{
-          item.is_registered === true ? "Yes" : "No"
-        }}</v-chip>
+        <v-chip
+          small
+          :color="item.is_registered !== true ? 'red' : 'green'"
+          dark
+          >{{ item.is_registered === true ? "Yes" : "No" }}</v-chip
+        >
       </template>
       <template v-slot:body.append>
         <tr>
@@ -139,7 +142,7 @@ export default {
   },
   created() {
     this.filterUnique();
-    // console.log(this.loadedWarehouse);
+    //  console.log(this.loadedWarehouse);
   },
 };
 </script>

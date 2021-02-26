@@ -1,16 +1,16 @@
 <template>
-  <v-autocomplete
+  <v-switch
     v-bind="$attrs"
     v-model="valuetemp"
-    auto-select-first
-  ></v-autocomplete>
+    
+  ></v-switch>
 </template>
 
 <script>
 export default {
-  name: "autocompleteInput",
+  name: "switchInput",
   props: {
-    value: [String, Array, Number],
+    value: [Boolean],
   },
   data() {
     return {
