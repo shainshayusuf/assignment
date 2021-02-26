@@ -20,7 +20,6 @@
                 v-model="editData.city"
                 :items="city"
                 label="Select City"
-                clearable
               ></autocompleteInput>
             </v-flex>
             <v-spacer></v-spacer>
@@ -29,7 +28,6 @@
                 v-model="editData.cluster"
                 :items="cluster"
                 label="Select Cluster"
-                clearable
               ></autocompleteInput>
             </v-flex>
             <v-spacer></v-spacer>
@@ -52,7 +50,6 @@
                 v-model="editData.type"
                 :items="['Leasable Space', 'Warehouse Service']"
                 label="Select Type"
-                clearable
               ></autocompleteInput>
             </v-flex>
             <v-spacer></v-spacer>
