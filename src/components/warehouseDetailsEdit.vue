@@ -43,7 +43,6 @@
                 v-model="editData.space_available"
                 type="number"
                 label="Space available"
-                :rules="[rules.required]"
               >
               </textFieldInput>
             </v-flex>
@@ -135,8 +134,7 @@ export default {
     filled() {
       return (
         this.editData.name.length > 0 &&
-        this.editData.code.length > 0 &&
-        this.editData.space_available > 0
+        this.editData.code.length > 0 
       );
     },
   },
