@@ -1,5 +1,7 @@
 <template>
+<div>
   <v-text-field v-bind="$attrs" v-model="valuetemp"></v-text-field>
+  </div>
 </template>
 
 <script>
