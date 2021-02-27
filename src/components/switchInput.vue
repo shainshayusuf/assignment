@@ -1,9 +1,7 @@
 <template>
-  <v-switch
-    v-bind="$attrs"
-    v-model="valuetemp"
-    
-  ></v-switch>
+  <div>
+    <v-switch v-bind="$attrs" v-model="valuetemp"></v-switch>
+  </div>
 </template>
 
 <script>

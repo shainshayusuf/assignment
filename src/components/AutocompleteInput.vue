@@ -1,9 +1,11 @@
 <template>
-  <v-autocomplete
-    v-bind="$attrs"
-    v-model="valuetemp"
-    auto-select-first
-  ></v-autocomplete>
+  <div>
+    <v-autocomplete
+      v-bind="$attrs"
+      v-model="valuetemp"
+      auto-select-first
+    ></v-autocomplete>
+  </div>
 </template>
 
 <script>
