@@ -1,6 +1,6 @@
 import mutations from "./mutation";
 
-test("increment increments state.count by 1", () => {
+test("change original list with updateList", () => {
   const state = {
     warehouse: [
       {
